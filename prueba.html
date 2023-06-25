@@ -8,16 +8,234 @@
 </head>
 
 <body>
- 
-    
+
+
+    <h1 id="tituloInicio"> Casa Rural Mendia</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aspernatur necessitatibus illum unde iusto
+        vitae culpa illo laborum sint aut, distinctio deleniti, molestias corrupti eveniet ex at reiciendis.</p>
+    <br>
+    <p>Incidunt modi, obcaecati eaque esse commodi debitis molestias fugit atque optio repellat numquam illo odit
+        temporibus molestiae magnam voluptatibus illum assumenda perspiciatis facilis in deleniti. Expedita minima enim
+        incidunt.</p>
+
+    <pre>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aspernatur necessitatibus illum unde iusto vitae culpa illo laborum sint aut, distinctio deleniti, molestias corrupti eveniet ex at reiciendis.
+Incidunt modi, obcaecati eaque esse commodi debitis molestias fugit atque optio repellat numquam illo odit temporibus molestiae magnam voluptatibus illum assumenda perspiciatis facilis in deleniti. Expedita minima enim incidunt.</pre>
+
+    <ol>
+        <li>Primer elemento de la lista ordenada</li>
+        <li>
+            <ul>
+                <li>Segundo de la ordenada y primero de la lista no ordenada</li>
+                <li>Segundo de la ordenada y segundo de la lista no ordenada</li>
+                <li>Segundo de la ordenada y tercero de la lista no ordenada</li>
+            </ul>
+        </li>
+        <li>Tercer elemento de la lista ordenada</li>
+    </ol>
+
+    <p>Lista por definición</p>
+    <br />
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+
+    <a href="https://www.google.es/" title="Google" target="_blank">Enlace a google</a>
+
+
+    <table border="1px">
+        <caption>Tabla 3x3</caption>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+    </table>
+
+
+    <table border="2px">
+        <caption>Tabla de productos</caption>
+        <tr>
+            <th scope="col">Artículo</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Subtotal</th>
+        </tr>
+        <tr>
+            <td>Calcetines</td>
+            <td>7</td>
+            <td>3</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Camiseta</td>
+            <td>15</td>
+            <td>2</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Falda</td>
+            <td>12</td>
+            <td>1</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <th scope="row">TOTAL</th>
+            <td>-</td>
+            <td>6</td>
+            <td><strong>63</strong></td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption>Tabla con celdas unidas mediante coolspan</caption>
+        <tr>
+            <th>Nombre</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <tr>
+            <th>Mike (lesionado)</th>
+            <td colspan="3">0 km</td>
+            <td>4 km</td>
+        </tr>
+        <tr>
+            <th>Susan</th>
+            <td>23 km</td>
+            <td>18 km</td>
+            <td>19 km</td>
+            <td>15 km</td>
+        </tr>
+    </table>
+
+
+
+
+    <table border="1">
+        <caption>Tabla con celdas unidas mediante rowspan</caption>
+        <tr>
+            <th>&nbsp;</th> <!--Celda vacía-->
+            <th>Básico</th>
+            <th>Completo</th>
+        </tr>
+        <tr>
+            <th>Instalación</th>
+            <td rowspan="2">Gratis!</td>
+            <td>$49.99</td>
+        </tr>
+        <tr>
+            <th>Primer año</th>
+            <td>$19.99</td>
+        </tr>
+        <tr>
+            <th>Segundo año</th>
+            <td>$9.99</td>
+            <td>$29.99</td>
+        </tr>
+    </table>
+
+
+<!-- FORMULARIO -->
+<!-- method post para que se envíen ocultos //  autocomplete para q no se autocomplete con datos previos -->
+
+    <form name="formularioReserva" action="" method="post" autocomplete="off">
+    <!-- name: nombre con q se manda la info // -->
+       
+        <input type="text" name="nombre" >  
+        <input type="text" name="mail">    
+        <input type="number" name="personas">   
+
+        <input type="submit" value="Enviar">   
+    </form>
+
+
+
+        <form name="formulario" id="formulario" method="get" autocomplete="off">
+
+            Email: <input type="email">
+              <input type="submit" value="Aceptar"><br><br>
+            <br>
+            <br>
+            Edad;
+            <input type="number" min="18" max="100" step="10">
+            <input type="submit" value="Aceptar"><br><br>
+            <br>
+            <br>
+            Buscar:
+            <input type="search" name="buscar" id="buscar"><br><br>
+            <br>
+            <br>
+            URL:
+            <input type="url" name="URL" id="URL"><br><br>
+            <br>
+            <br>
+            Rango: <input type="range" min="0" max="100" step="10"><br><br>
+            <br>
+            <br>
+            Fecha:  <input type="date"><br><br>
+            <br>
+            <br>
+            <!-- Esto es un campo obligatorio -->
+            Hora:    <input type="time" name="hora" id="hora" required><br><br>
+            <br>
+            <br>
+            <!-- Esto es un campo obligatorio -->
+            Código postal: <input pattern="[0-9]{5}" required  placeholder="5 dígitos"br><br>
+            <br>
+            <br>
+            Telefono: <input type="tel">
+            <br>
+            <br>
+                        <!-- Esto es un Data list -->
+            <datalist id="informacion">
+                <option value="952773366" label="   Telefono 1"></option>
+                <option value="952734366" label="   Telefono 2"></option>
+                <option value="952773236" label="   Telefono 3"></option>
+            </datalist>
+            Telefono tipo datalist:
+              <input type="tel" name="telefono" id="telefono" list="informacion">
+              <br>
+              <br>
+              <!-- Esto es un Radio button -->
+              <label for="male">Male</label>
+
+              <input type="radio" name="gender" id="male" value="male"><br>
+              <label for="female">Female</label>
+
+              <input type="radio" name="gender" id="female" value="female"><br>
+              <label for="other">Other</label>
+
+              <input type="radio" name="gender" id="other" value="other"><br><br>
+
+            <br>
+            <br>
+              
+              <input type="submit" value="Enviar">
+              <br>
+              <br>
+    </form>
 
 
 
 
 
-
-
-
-    
+    <a href="#tituloInicio">Inicio</a>
 </body>
+
 </html>
