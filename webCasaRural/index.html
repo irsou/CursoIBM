@@ -1,22 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Rural Mendia</title>
+
+
+    <script src="https://kit.fontawesome.com/c98cc049fe.js" crossorigin="anonymous"></script>
+
+
 </head>
+
 <body>
     <header id="encabezado"></header>
 
-    <h1>Casa Rural Mendia</h1>
 
-    <section id="presentacion"></section>
-    <section id="galeria"></section>
-    <section id="servicios"></section>
-    <section id="localizacion"></section>
-    <section id="reserva"></section>
-    <footer id="pie"></footer>
+
+    <section id="presentacion">
+
+        <h1>Casa Rural Mendia</h1>
+        <img src="media/3.jpg" alt="Foto de la casa">
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor et unde non necessitatibus cum nisi possimus!
+            Natus obcaecati eligendi aliquam, corrupti suscipit commodi. Veniam earum fuga doloremque officiis ducimus
+            numquam!</p>
+    </section>
+    <section id="galeria">
+        <h2>Galería</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus perspiciatis doloremque accusantium aliquam
+            nihil repellat quisquam veritatis, incidunt natus quam, aspernatur tempora eveniet sunt eum molestias ipsa
+            nisi sint. Minus?</p>
+        <img src="media/1.jpg" alt="">
+        <img src="media/2.jpg" alt="">
+        <img src="media/4.jpg" alt="">
+
+
+    </section>
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia iste ipsam eaque fuga ex aliquid quidem
+            aut placeat ipsum.</p>
+        <ul>
+            <li>Piscina</li>
+            <li>Televisión</li>
+            <li>Barbacoa</li>
+            <li>Lavadora y secadora</li>
+            <li>Aire acondicionado</li>
+            <li>Chimenea</li>
+            <li>Ropa de cama</li>
+        </ul>
+    </section>
+    <section id="localizacion">
+        <h2>Localización</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d65792.01027897571!2d-2.1514957593134807!3d43.217384809566575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1687707341594!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+
+
+
+
+    <section id="reserva">
+
+        <h2>Formulario de reserva</h2>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, esse quisquam neque, beatae veritatis laudantium praesentium illo delectus ut impedit reiciendis soluta.</p>
+
+        <form action="reservas.php" method="post">
+
+            <input type="text" name="nombre" id="nombre">
+            <input type="email" name="mail" id="mail">
+        <input type="date" name="fechaEntrada" id="fechaEntrada">
+        <input type="date" name="fechaSalida" id="fechaSalida">
+        <textarea name="comentarios" id="comentarios" cols="80" rows="3"></textarea>
+        <input type="submit" value="Enviar">
+        </form>
+
+
+
+
+
+    </section>
+
+    <footer id="pie">
+
+        <div id="datosContactoPie">
+            <p>+34 123456789 </p>
+            <p> mail@mail.com</p>
+        </div>
+        <i class="logoRrSs fa-brands fa-instagram" alt="logotipo Instagram"></i>
+        <i class="logoRrSs fa-brands fa-facebook-f" alt="lofotipo Facebook"></i>
+        <i class="logoRrSs fa-brands fa-twitter" alt="flogotipo Twitter"></i>
+    </footer>
 
 
 </body>
+
 </html>
