@@ -45,3 +45,41 @@ diccio= dict(zip(keys, values))
 for k in diccio:
     elemento= '{}: {}'.format(k, diccio[k])
     print(elemento)
+    
+letras =list('abcdefghijklmnopqrstuvwxyz')
+
+l1=letras[:8]
+l2=letras[8:16]
+l3=letras[16:]
+
+print(l1)
+print(l3)
+print(l2)
+
+#baraja las letras
+import random
+random.shuffle(l1)
+random.shuffle(l2)
+random.shuffle(l3)
+
+for a,b,c in zip(l1,l2,l3):
+    print (a+b+c, end=' ')
+
+##############################################
+
+letras =list('abcdefghijklmnopqrstuvwxyz')
+vocales='aeiou'
+
+random.shuffle(letras)
+print(''.join(letras))
+print(letras)
+
+for i, letra in enumerate(letras):
+    if letra in vocales:
+        print('{} en la posición {}'.format(letra,i))
+        
+        
+abcde=sorted(letras) [:5]
+print(list(enumerate(abcde)))
+print('le decimos por qué número empieza')
+print(list(enumerate(abcde,8)))
