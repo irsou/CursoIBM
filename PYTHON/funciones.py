@@ -51,3 +51,5 @@ def minimo(l):
 
 print(minimo(0))
 
+
+
