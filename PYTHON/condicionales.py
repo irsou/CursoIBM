@@ -240,4 +240,19 @@ while numRaiz<0:
 
 if numRaiz>=0:
     print('La raíz cuadrada de', numRaiz, 'es',math.sqrt(numRaiz))
+   
+   
+#comprobar mail
+   
+miEmail=input("Introduce tu mail: ")
+email=False 
+
+for i in miEmail:
+    if i=="@":
+        email=True
+if email==True:
+    print("El mail es correcto")
+else:
+    print("el mail no es correcto")
+    
     
